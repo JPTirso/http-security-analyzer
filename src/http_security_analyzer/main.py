@@ -1,9 +1,11 @@
 from http_security_analyzer.analyzer import make_request
 
-url = "https://google.com"
+url = input("Digite a URL desejada: ")
 
 response = make_request(url)
-
-print("Status:", response.status_code)
-print("URL:", response.url)
-print("Headers:", response.headers)
+if response:
+    print("Status:", response.status_code)
+    print("URL:", response.url)
+    print("Headers:", response.headers)
+else:
+    print("Não foi possível analisar o site.")
