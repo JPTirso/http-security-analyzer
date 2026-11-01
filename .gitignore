@@ -1,2 +1,3 @@
 .venv/
-src/http_security_analyzer/__pycache__/
+__pycache__/
+*.py[cod]
